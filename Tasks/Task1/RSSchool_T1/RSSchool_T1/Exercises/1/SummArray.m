@@ -4,7 +4,13 @@
 
 // Complete the summArray function below.
 - (NSNumber *)summArray:(NSArray *)array {
-    return @(0);
+    int result = 0;
+    
+    for(NSNumber *n in array){
+        result += [n intValue];
+    }
+    
+    return @(result);
 }
 
 @end
